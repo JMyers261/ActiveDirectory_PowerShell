@@ -1,4 +1,4 @@
-<h1>FIM - Bulk User Account Creation-Modification</h1>
+<h1>PowerShell - Bulk User Account Creation-Modification</h1>
 
  User Account Creation & Modification using PowerShell
 

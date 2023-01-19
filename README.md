@@ -53,7 +53,7 @@ Here is a step-by-step tutorial that covers Automating user account provisioning
 <img src="https://i.imgur.com/WUr0ASF.jpg" height="80%" width="80%"/>
 <br />
 <br />
- This script will read the CSV file, create new AD user objects using the New-ADUser cmdlet, set the user's account as enabled, and set a flag to require the user to change the password at first login. It will also add the user to the specified group using the Add-ADGroupMember cmdlet and display a message indicating that the user has been created and added to the group.
+ This script will read the CSV file, create new AD user objects using the <b>New-ADUser</b> cmdlet, set the user's account as enabled, and set a flag to require the user to change the password at first login. It will also add the user to the specified group using the <b>Add-ADGroupMember</b> cmdlet and display a message indicating that the user has been created and added to the group.
 <br />
 <br />
  3.	<b>Modifying existing user accounts:</b> 
@@ -67,7 +67,7 @@ Here is a step-by-step tutorial that covers Automating user account provisioning
 <img src="https://i.imgur.com/aupHlWV.jpg" height="80%" width="80%"/>
  <br />
 <br />
-This script will read the CSV file, update the user object attributes using the Set-ADUser cmdlet, and display a message indicating that the user has been modified with the new name.
+This script will read the CSV file, update the user object attributes using the <b>Set-ADUser</b> cmdlet, and display a message indicating that the user has been modified with the new name.
 <br />
 <br />
  4.	<b>Removing or disabling user accounts that are no longer needed:</b>
@@ -86,7 +86,7 @@ This script will read the CSV file, update the user object attributes using the 
 <br />
  <img src="https://i.imgur.com/T7KLXLK.jpg" height="80%" width="80%"/>
  <br/>
-This script will read the CSV file, iterate through each row, and execute the command Disable-ADAccount -Identity $User.SamAccountName, which will disable the user account, identified by its SamAccountName, in the Active Directory. It will also print out the message "User $($User.Name) has been disabled." using the Write-Host cmdlet, to indicate that the user account has been successfully disabled.
+This script will read the CSV file, iterate through each row, and execute the command <b>Disable-ADAccount -Identity $User.SamAccountName</b>, which will disable the user account, identified by its SamAccountName, in the Active Directory. It will also print out the message "User $($User.Name) has been disabled." using the <b>Write-Host</b> cmdlet, to indicate that the user account has been successfully disabled.
 <br />
 <br />
 It's important to note that disabling an account is a safer option than deleting an account, as it prevents the user from logging in to the domain, but still leaves the account in AD, in case you need to enable it again. Additionally, it's good practice to back up your AD before running any script that modifies it, in case something goes wrong.
